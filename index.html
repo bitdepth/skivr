@@ -9,34 +9,48 @@
 </head>
 <body>
 
-	<div role="main" class="container">
-        <h1>Skivr component</h1>
+	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./" class="navbar-brand">Skivr</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
 
-<p>Skivr is an ajax lazy loader for external content. It helps to keep the inital page weight low on mobile devices until a media query evaluates to true and then it grabs the content and injects it into the page.</p>
 
-
-<div class="content">
-	<p>The blue alert paragraph below is only loaded when the media query evaluates true. If you can't see it try maximizing your browser window.</p>
-
-    <div data-skivr-url="data/skivr.load.html" data-skivr-mq="screen and (min-width: 940px)">
-    	
+        </div>
+      </div>
     </div>
 
-</div>
+	<div role="main" class="container">
+        <h1>How to use Skivr</h1>
 
-<p>To use Skivr you need to insert a container element in the page html and attach <code>data-skivr-url</code> and <code>data-skivr-mq</code> attributes to it. Like so:</p> 
-
-<script src="https://gist.github.com/mooklateer/7230795.js"></script>
-
-<p>To initialise Skivr call the init function like so.</p>
-
-<script src="https://gist.github.com/mooklateer/5aa8abfa261d31ab4f0c.js"></script>
+		<p>Skivr is an ajax lazy loader for external content. It helps to keep the inital page weight low on mobile devices until a media query evaluates to true and then it grabs the content and injects it into the page.</p>
 
 
+		<div class="content">
+			<p>The blue alert paragraph below is only loaded when the media query evaluates true. If you can't see it try maximizing your browser window.</p>
 
+		    <div data-skivr-url="data/skivr.load.html" data-skivr-mq="screen and (min-width: 940px)">
+		    	
+		    </div>
 
+		</div>
 
-      </div>
+		<p>To use Skivr you need to insert a container element in the page html and attach <code>data-skivr-url</code> and <code>data-skivr-mq</code> attributes to it. Like so:</p> 
+
+		<script src="https://gist.github.com/mooklateer/7230795.js"></script>
+
+		<p>To initialise Skivr call the init function like so.</p>
+
+		<script src="https://gist.github.com/mooklateer/5aa8abfa261d31ab4f0c.js"></script>
+
+	</div>
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script type="" src="https://rawgithub.com/mooklateer/skivr/master/skivr.js"></script>
@@ -44,5 +58,6 @@
 	<script>
 		skivr.init();
 	</script>
+	
 </body>
 </html>
